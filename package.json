@@ -1,0 +1,1 @@
+{"name":"releaseorigin","version":"1.0.0","private":true,"type":"module","scripts":{"test":"python -m unittest discover -s tests -v","schema":"node scripts/schema.mjs","verify":"node scripts/verify-live.mjs"},"dependencies":{"genlayer-js":"2.0.0"}}

@@ -1,0 +1,6 @@
+ReleaseOrigin receipt helper build procedure v1.
+1. Read src/canonical.mjs from the declared immutable source commit.
+2. Normalize CRLF line endings to LF without changing other content.
+3. Write those UTF-8 bytes to fixtures/artifact.mjs.
+4. Compute the artifact SHA-256 and record the source commit, manifest SHA-256, procedure SHA-256 and version in the build attestation.
+No compilation, network dependency installation, or code minification is part of this procedure. The dependency manifest must declare an empty dependencies object. This procedure documents a build; it does not independently prove execution or reproducibility.

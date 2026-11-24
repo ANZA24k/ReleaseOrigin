@@ -1,0 +1,13 @@
+# Security and limits
+
+- Claims are trust policies chosen by their creator. A self-selected RSA key authenticates its signed text under that key, not a real-world organization. Consumers must check the owner's identity and builder key independently.
+- Documentary VERIFIED is neither a reproducible-build certificate nor malware detection. No code is executed by the contract. It cannot establish builder isolation, secret handling, physical execution, transitive dependency completeness or absence of vulnerabilities.
+- Immutable inputs and version/hash/signature gates cannot be overridden by AI. The external retrieval identity check precedes interpretation. Missing or substituted web content is INCONCLUSIVE. A cryptographically invalid signed document in otherwise retrieved evidence is MISMATCH.
+- Only the record owner can submit and finalize. IDs are first-come; index by owner plus claim hash rather than assuming an ID represents a vendor. All data is public. Do not upload secrets or private manifests.
+- Evidence retrieval is limited to immutable safe paths on the declared public GitHub repository. No evidence-supplied links are visited. Size checks happen after SDK transport; they are not streaming download quotas. The host/runtime controls redirects and request timeouts; the contract verifies received bytes, not an HTTP transport identity proof.
+- Independent validators rerun semantic reasoning. Exact quotes are checked and decisions must match. Model prompt injection, shared model biases and misleading signed statements remain risks. The source and prompt explicitly deny evidence instructions authority; this is mitigation, not guaranteed immunity.
+- Any caller may spend their own network fees to review. At most three successful reviews are stored, one challenge total. Failed transactions consume network fees but not application budget. A third party can use the one challenge slot first; owner finalization can immediately close challenges. This is an audit primitive with an optional annotation/review facility, not a censorship-resistant timed dispute market.
+- A network-level undetermined transaction is never silently represented as an on-chain verdict. Preserve transaction receipts separately and retry only after verifying chain state.
+- RSA implementation is deliberately narrow: RSA-2048/e65537/PKCS#1-v1.5/SHA256 only. Public-exponent verification is not secret-dependent. Tests compare valid/tampered signatures with the cryptography library. No signing private key is included in the repo.
+
+Report security concerns privately to the repository owner before publishing exploit details. No independent security audit has been performed.
