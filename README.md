@@ -4,6 +4,10 @@ A standalone GenLayer Intelligent Contract for software build provenance verific
 
 **VERIFIED means documentary provenance is supported under the submitter's locked trust policy. It does not mean the build was independently reproduced, the builder is trustworthy, the source is safe, or the artifact is free of vulnerabilities.**
 
+## Live contract
+
+[Studionet explorer](https://explorer-studio.genlayer.com/address/0x4EA67e0A09dE17aA2909e3f402Dc2E381aeFaAfb) · Chain ID 61999 · Fixture `RO-LIVE-001`. See the [reviewer guide](docs/REVIEWER.md) and [finalized verification report](docs/verification.json).
+
 ## What trust problem it solves
 
 Release metadata can claim a source commit or dependency set without supporting it. A valid signature can also cover a build that deviates from the promised process. ReleaseOrigin combines deterministic consistency and signature checks with evidence-grounded semantic review. A validator independently reruns the review and must agree on its decision; a correctly formatted leader answer alone never suffices.

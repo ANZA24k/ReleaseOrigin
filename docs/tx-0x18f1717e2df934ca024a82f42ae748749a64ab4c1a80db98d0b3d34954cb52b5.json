@@ -1,0 +1,19 @@
+{
+  "checked_at": "2026-11-24T08:59:59.355Z",
+  "hash": "0x18f1717e2df934ca024a82f42ae748749a64ab4c1a80db98d0b3d34954cb52b5",
+  "from": "0xcD72fA5B6A496d84B4A10bCFF31D3B7c12346a9e",
+  "to": "0x4EA67e0A09dE17aA2909e3f402Dc2E381aeFaAfb",
+  "status": "FINALIZED",
+  "execution_result": "FINISHED_WITH_RETURN",
+  "execution_mode": "NORMAL",
+  "leader_only": false,
+  "initial_validators": 5,
+  "votes": {
+    "0x22Eda431B7fBC1216baE3b077a78c973a8719c58": "agree",
+    "0x240d2d7c8DF220110c26cfFFC532479319Cca0dC": "idle",
+    "0x534af64FFB6796Bc69aBf4C26c50788F1fFAfe56": "agree",
+    "0x6DC61b906F74F44612c5545b0b79486133B3556d": "agree",
+    "0x813890bC5bEDEB4F5437570962379F04738F18Cb": "idle"
+  },
+  "explorer": "https://explorer-studio.genlayer.com/tx/0x18f1717e2df934ca024a82f42ae748749a64ab4c1a80db98d0b3d34954cb52b5"
+}

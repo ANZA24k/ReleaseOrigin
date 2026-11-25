@@ -1,0 +1,19 @@
+{
+  "checked_at": "2026-11-24T08:59:46.020Z",
+  "network": "Studionet",
+  "chain_id": 61999,
+  "contract": "0x4EA67e0A09dE17aA2909e3f402Dc2E381aeFaAfb",
+  "source_sha256": "d36a38974303a1663e9c848c22b9b81ad26b86cdb5b31523ca24f40b9599abe7",
+  "source_matches": true,
+  "finalized_reads": true,
+  "records": [
+    {
+      "release_id": "RO-LIVE-001",
+      "phase": "REVIEWED",
+      "status": "VERIFIED",
+      "receipts": 3,
+      "head": "b32a6e39906ed793db2cfc8b1632c4b0f3fef2d297e5676585eefa26b2c1cef3",
+      "attempts": 1
+    }
+  ]
+}

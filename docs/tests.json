@@ -1,0 +1,10 @@
+{
+  "checked_at": "2026-11-24T09:01:35.595321+00:00",
+  "unit_and_fixture_tests": 32,
+  "passed": 32,
+  "mocked_vm_and_web": true,
+  "fixture_signature_independently_verified_with": "cryptography 50.0.0",
+  "built_artifact_execution": "PASS",
+  "genvm_schema": "PASS",
+  "genvm_lint": "PASS: zero issues"
+}
