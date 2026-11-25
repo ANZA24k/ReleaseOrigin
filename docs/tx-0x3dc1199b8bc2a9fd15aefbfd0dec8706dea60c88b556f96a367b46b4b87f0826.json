@@ -1,0 +1,124 @@
+{
+  "checked_at": "2026-11-25T05:53:15.848Z",
+  "hash": "0x3dc1199b8bc2a9fd15aefbfd0dec8706dea60c88b556f96a367b46b4b87f0826",
+  "from": "0xcD72fA5B6A496d84B4A10bCFF31D3B7c12346a9e",
+  "to": "0x4EA67e0A09dE17aA2909e3f402Dc2E381aeFaAfb",
+  "status": "FINALIZED",
+  "execution_result": "FINISHED_WITH_RETURN",
+  "execution_mode": "NORMAL",
+  "leader_only": false,
+  "initial_validators": 5,
+  "votes": {
+    "0x23A15A452F19D1B616276fedC5B8B51d69082959": "agree",
+    "0x5744305308D62592B7De585e1999c4Ea51E03C29": "agree",
+    "0x6DC61b906F74F44612c5545b0b79486133B3556d": "agree",
+    "0x88E148Da14d45c5a5DD2DB25E776eBCBCe0Df539": "idle",
+    "0xBE58b43DF1d991e054F743Cc5571dD7029F3B888": "agree"
+  },
+  "leader_receipts": [
+    {
+      "mode": "leader",
+      "vote": null,
+      "result": {
+        "raw": "AAA=",
+        "status": "return",
+        "payload": {
+          "raw": [
+            0
+          ],
+          "readable": "null"
+        }
+      },
+      "calldata": {
+        "base64": "FgBEZmluYWxpemUEYXJncw1cUk8tTElWRS0wMDE=",
+        "raw": [
+          22,
+          0,
+          68,
+          102,
+          105,
+          110,
+          97,
+          108,
+          105,
+          122,
+          101,
+          4,
+          97,
+          114,
+          103,
+          115,
+          13,
+          92,
+          82,
+          79,
+          45,
+          76,
+          73,
+          86,
+          69,
+          45,
+          48,
+          48,
+          49
+        ],
+        "readable": "{\"\":\"finalize\"\"args\":[\"RO-LIVE-001\",]}"
+      },
+      "eq_outputs": {},
+      "execution_result": "SUCCESS",
+      "contract_state_hash": "dc16d3038492c107c4d240ebff902624bfc61f3944d3427b6ca82095e7dc78cd"
+    },
+    {
+      "mode": "validator",
+      "vote": "agree",
+      "result": {
+        "raw": "AAA=",
+        "status": "return",
+        "payload": {
+          "raw": [
+            0
+          ],
+          "readable": "null"
+        }
+      },
+      "calldata": {
+        "base64": "FgBEZmluYWxpemUEYXJncw1cUk8tTElWRS0wMDE=",
+        "raw": [
+          22,
+          0,
+          68,
+          102,
+          105,
+          110,
+          97,
+          108,
+          105,
+          122,
+          101,
+          4,
+          97,
+          114,
+          103,
+          115,
+          13,
+          92,
+          82,
+          79,
+          45,
+          76,
+          73,
+          86,
+          69,
+          45,
+          48,
+          48,
+          49
+        ],
+        "readable": "{\"\":\"finalize\"\"args\":[\"RO-LIVE-001\",]}"
+      },
+      "execution_result": "SUCCESS",
+      "contract_state_hash": "dc16d3038492c107c4d240ebff902624bfc61f3944d3427b6ca82095e7dc78cd"
+    }
+  ],
+  "explorer": "https://explorer-studio.genlayer.com/tx/0x3dc1199b8bc2a9fd15aefbfd0dec8706dea60c88b556f96a367b46b4b87f0826"
+}

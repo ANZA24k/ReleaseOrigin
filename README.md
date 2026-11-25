@@ -6,7 +6,7 @@ A standalone GenLayer Intelligent Contract for software build provenance verific
 
 ## Live contract
 
-[Studionet explorer](https://explorer-studio.genlayer.com/address/0x4EA67e0A09dE17aA2909e3f402Dc2E381aeFaAfb) · Chain ID 61999 · Fixture `RO-LIVE-001`. See the [reviewer guide](docs/REVIEWER.md) and [finalized verification report](docs/verification.json).
+[Studionet explorer](https://explorer-studio.genlayer.com/address/0x4EA67e0A09dE17aA2909e3f402Dc2E381aeFaAfb) · Chain ID 61999 · Fixture `RO-LIVE-001`: **FINALIZED / VERIFIED**, six verified receipts, including challenge adjudication. See the [reviewer guide](docs/REVIEWER.md) and [finalized verification report](docs/verification.json).
 
 ## What trust problem it solves
 

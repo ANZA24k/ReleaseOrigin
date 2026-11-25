@@ -1,5 +1,5 @@
 {
-  "attempts": 1,
+  "attempts": 2,
   "bundle": {
     "artifact": {
       "body": "// ReleaseOrigin release helper v1.0.0. ASCII-only canonical JSON for receipt hashing.\nimport {createHash} from 'node:crypto';\nexport function canonical(value) {\n  const sort = v => Array.isArray(v) ? v.map(sort) : v && typeof v === 'object'\n    ? Object.fromEntries(Object.keys(v).sort().map(k => [k, sort(v[k])])) : v;\n  return JSON.stringify(sort(value)).replace(/[\\u007f-\\uffff]/g,\n    c => '\\\\u' + c.charCodeAt(0).toString(16).padStart(4,'0'));\n}\nexport const digest = value => createHash('sha256').update(canonical(value)).digest('hex');\n",
@@ -27,7 +27,10 @@
     }
   },
   "bundle_hash": "6a25c668218e3b004c81a14f3e8883bec43528c9ece82f46582c5c35f9b3f3bc",
-  "challenge": null,
+  "challenge": {
+    "author": "0xcD72fA5B6A496d84B4A10bCFF31D3B7c12346a9e",
+    "reason": "The build description mentions line-ending normalization. Check whether procedure step 2 expressly permits that change and whether the documents disclose any additional exception. Do not infer physical reproducibility."
+  },
   "claim": {
     "artifact_sha256": "c8955bd08bc095bae34ae70397702d7cda68f623fd33471447ef7dda14ca1bc8",
     "builder_rsa_n": "b82f16a1cec9852cfd730a2e01ccc556a4b8b858dbfad734cc70c24c05ac068884bf1e077fd04888b7e112e92771ad30f28562fbb52f8dae7709b3c4429bab7f265bdb243ff1bdd026f054cf5349d4beaf1be485a391450450b8f967ee1e74191c176dc52127671fb8b12a8951eaf83a79ca4f09f0535117ac58ae16c5c0078b576533638198779b4bab063fcf8dafb31e4c8d001615cbc3595599fa9352de6efe4e8cbf475418b641d4adf2c53e95144429f2521b2079a05e5ff57012111c6e6995e540dc3f645f028ea788c66a129ed34d597db4f89d65d204410a2744a918c09f78e5c926e32561626c6c802465104918756ee12ef944ba0db09b38142dfd",
@@ -40,9 +43,9 @@
     "version": "1.0.0"
   },
   "claim_hash": "dc38acefd20406fc1abd462914f3b567ca6a62de4822c482c2c5e617e0bf55d2",
-  "head": "b32a6e39906ed793db2cfc8b1632c4b0f3fef2d297e5676585eefa26b2c1cef3",
+  "head": "42f2eca8250bed2314b7682231dc4f16ba24c4231bac2a98e5f0cb7ec12a5be7",
   "owner": "0xcD72fA5B6A496d84B4A10bCFF31D3B7c12346a9e",
-  "phase": "REVIEWED",
+  "phase": "FINALIZED",
   "result": {
     "failures": [],
     "retrieval": {
@@ -53,12 +56,12 @@
     },
     "scope": "Documentary provenance under the locked builder key; no reproducibility guarantee.",
     "semantic": {
-      "attestation_quote": "normalized CRLF to LF, and wrote the unchanged remaining UTF-8 bytes to fixtures/artifact.mjs",
+      "attestation_quote": "normalized CRLF to LF",
       "decision": "SUPPORTED",
-      "procedure_quote": "Normalize CRLF line endings to LF without changing other content.",
-      "reason": "The signed build_description accounts for every procedure step: it reads src/canonical.mjs at the declared source commit, normalizes CRLF to LF, and writes the bytes to fixtures/artifact.mjs. The attestation records the artifact, manifest and procedure SHA-256 values, the source commit and the version. It states the dependencies object is empty and that no compilation, network installation or minification occurred. The exceptions field is empty, so no policy permission is needed even though the locked policy is blank. This rests on the signed description only; it does not prove execution or reproducibility."
+      "procedure_quote": "2. Normalize CRLF line endings to LF without changing other content.",
+      "reason": "All four required procedure steps are fully accounted for in the signed attestation's build description, including step 2's line-ending normalization. No exceptions are disclosed or claimed, and the build description matches the declared procedure."
     },
     "status": "VERIFIED"
   },
-  "sequence": 3
+  "sequence": 6
 }

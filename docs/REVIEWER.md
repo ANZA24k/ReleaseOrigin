@@ -27,3 +27,7 @@ In Studio, select the deployed contract and call `get_release("RO-LIVE-001")` an
 - `challenge`, `finalize`: optional single challenge, total budget of three successful reviews, owner-controlled closure.
 
 All four outcomes are tested locally. A live VERIFIED record demonstrates the actual semantic path. No fixture or test asserts independent reproducibility, malware absence, real-world key ownership, or an external audit. The model may be wrong; validators, immutable evidence and conservative unknown handling mitigate unilateral claims rather than eliminate truth uncertainty.
+
+## Completed live run
+
+`RO-LIVE-001` is finalized with VERIFIED after challenge adjudication. Six receipts record create, submit, first review, challenge, second review and owner finalization. One failed network-consensus attempt is archived separately; it was not an on-chain INCONCLUSIVE verdict. See the full transaction table in DEPLOYMENT.md. Source equality and every stored commitment were independently rechecked at finalized state on 25 November 2026.

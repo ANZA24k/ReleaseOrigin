@@ -16,3 +16,7 @@ Review source, tests, EVIDENCE and SECURITY first. Use DEPLOYMENT and the machin
 - [GenVM schema](contract-schema.json) and [lint result](genvm-lint.json): live runtime checks.
 
 Live outcome and lifecycle details are recorded in verification.json and transaction summaries. Local tests cover all four outcomes; a live outcome must only be claimed when present in the collected chain state.
+
+## Completed live evidence
+
+The fixture `RO-LIVE-001` completed create → submit → review → challenge → adjudication → owner finalization. Finalized outcome: **VERIFIED**, two successful reviews, six hash-linked receipts. One earlier adjudication transaction failed to reach consensus and is explicitly preserved in DEPLOYMENT.md; it did not mutate application state. The successful retry and finalization used full NORMAL consensus and the original deployed source.
